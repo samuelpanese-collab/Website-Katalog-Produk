@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Produk</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #5dade2;
+    color: black;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+header p {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.logo-utama {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 90px;
+}
+
+.logo-produk {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logo-produk img {
+  width: 40px;
+  height: auto;
+  opacity: 0,8;
+}
+
+.logo-produk img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.harga {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #c92d3a;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <img src="Images/sinarmeadow.png" class="logo-utama"
+
+
+    <h1>Katalog Produk</h1>
+    <p>Produk SINAR MEADOW yang berkualitas untuk kebutuhan bakery & usaha Anda</p>
+<p>Distributor CV BERKAT USAHA</p>
+
+<div class="logo-produk">
+  <img src="Images/Logo MM safire.png" alt="MM safire">
+  <img src="Images/Logo GB.png" alt="Gold Bullion">
+  <img src="Images/LOgo MC.png" alt="Mother Choice">
+  <img src="Images/Logo Cita.png" alt="Cita">
+  <img src="Images/Logo Smazz.png" alt="Smazz">
+  </div>
+
+  </header>
+
+<section class="container">
+
+```
+<!-- PRODUK 1 -->
+<div class="card">
+    <img src="Images/Moremade Safire.png" alt="Produk 1">
+    <h2>Moremade Safire Butter Blend</h2>
+    <p>Tekstur lembut, cocok untuk roti, Cake & Cookies</p>
+    <p>Flavour: Butter</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 36°-38°C</p>
+    <span class="harga">Rp 2.124.300 (17kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Safire%20Butter%20Blend" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 2 -->
+<div class="card">
+    <img src="Images/MCBB 200g.png" alt="Produk 2">
+    <h2>Mother Choice Butter Blend</h2>
+    <p>Rasa gurih premium untuk bakery & UMKM</p>
+    <p>Flavour: Butter</p>
+    <p>Warna: Pale Yellow</p>
+    <p>Melting Point: 37°-39°C</p>
+    <span class="harga">Rp 810.000  (60x200gr)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Mother%20Choice" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 3 -->
+<div class="card">
+    <img src="Images/GB Grand Butter Blend.png" alt="Produk 3">
+    <h2>GB Grand Butter Blend</h2>
+    <p>Cocok untuk Adonan Roti, Donat & Cake</p>
+    <p>Flavour: Creamy Butter</p>
+    <p>Warna: Light Yellow</p>
+    <p>Melting Point: 36°-38°C</p>
+    <span class="harga">Rp 1.185.800 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 4 -->
+<div class="card">
+    <img src="Images/Merrywhip.png" alt="Produk 4">
+    <h2>GB Merrywhip Cream Fat</h2>
+    <p>Cocok untuk Creaming untuk dekorasi kue</p>
+    <p>Flavour: BUtter</p>
+    <p>Warna: Shiny White</p>
+    <p>Melting Point: 37°-39°C</p>
+    <span class="harga">Rp 824.700 (16kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 5 -->
+<div class="card">
+    <img src="Images/GB BOS.png" alt="Produk 5">
+    <h2>GB BOS</h2>
+    <p>Cocok Untuk Kue, Roti Manis & Donat</p>
+    <p>Flavour: Creamy Butter</p>
+    <p>Warna: Shiny Yellow</p>
+    <p>Melting Point: 33°-35°C</p>
+    <span class="harga">Rp 578.000  (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 6 -->
+<div class="card">
+    <img src="Images/GB Prime Cake Margarin.png" alt="Produk 6">
+    <h2>GB Prime Cake Margarin</h2>
+    <p>Cocok untuk Adonan Roti, Kue seribu Lapis & Adonan Donat</p>
+    <p>Flavour: Strong Butter</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 37°-39°C</p>
+    <span class="harga">Rp 554.400  (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 7 -->
+<div class="card">
+    <img src="Images/MEDAL.png" alt="Produk 7">
+    <h2>GB Medal Bread Fat</h2>
+    <p>Cocok untuk Adonan Roti, Dinner Roll, Humburger, Donat & Roti Manis</p>
+    <p>Flavour: Mild Butter</p>
+    <p>Warna: OFF Yellow</p>
+    <p>Melting Point: 41°-43°C</p>
+    <span class="harga">Rp 699.000 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 8 -->
+<div class="card">
+    <img src="Images/Flake Pastry.png" alt="Produk 8">
+    <h2>GB Flake Pastry Shortening</h2>
+    <p>Cocok untuk Adonan Puff Pastry, Pia & Sosis Gulung</p>
+    <p>Flavour: Mild Butter</p>
+    <p>Warna: Light Yellow</p>
+    <p>Melting Point: 46°-48°C</p>
+    <span class="harga">Rp 714.100 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 9 -->
+<div class="card">
+    <img src="Images/Bread-o.png" alt="Produk 9">
+    <h2>GB Bread-O Bread Fat</h2>
+    <p>Cocok untuk Roti Tawar</p>
+    <p>Flavour: Bland</p>
+    <p>Warna: OFF White</p>
+    <p>Melting Point: 40°-46°C</p>
+    <span class="harga">Rp 553.400 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 10 -->
+<div class="card">
+    <img src="Images/BOS STAR.png" alt="Produk 10">
+    <h2>GB BOS Star</h2>
+    <p>Cocok untuk Adonan Roti Manis, Donat & Cookies</p>
+    <p>Flavour: Creamy Butter</p>
+    <p>Warna: Shiny Yeloow</p>
+    <p>Melting Point: 35°-37°C</p>
+    <span class="harga">Rp 741.700 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 11 -->
+<div class="card">
+    <img src="Images/GB Frymasta.png" alt="Produk 11">
+    <h2>GB Frymasta</h2>
+    <p>Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan (tempura, ayam goreng)</p>
+    <p>Flavour: Bland</p>
+    <p>Warna: OFF White</p>
+    <p>Melting Point: 40°-42°C</p>
+    <span class="harga">Rp 543.900 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 12 -->
+<div class="card">
+    <img src="Images/frymasta star.png" alt="Produk 12">
+    <h2>GB Frymasta Star</h2>
+    <p>Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan (tempura, ayam goreng)</p>
+    <p>Flavour: Creamy (Savoury)</p>
+    <p>Warna: OFF White</p>
+    <p>Melting Point: 43°-45°C</p>
+    <span class="harga">Rp 800.700 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 13 -->
+<div class="card">
+    <img src="Images/MC 15.png" alt="Produk 13">
+    <h2>Mother Choice Bakery Margarin</h2>
+    <p>Cocok untuk Adonan Roti Manis, Donat & Martabak</p>
+    <p>Flavour: Fruity Butter</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 37°-39°C</p>
+    <span class="harga">Rp 404.600 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 14 -->
+<div class="card">
+    <img src="Images/MC 4,5.png" alt="Produk 14">
+    <h2>Mother Choice MultiPurpose MGR</h2>
+    <p>Cocok untuk Adonan Roti Manis, Donat & Martabak</p>
+    <p>Flavour: Fruity Butter</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 37°-39°C</p>
+    <span class="harga">Rp 141.900 (4,5kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 15 -->
+<div class="card">
+    <img src="Images/Cita FRY.png" alt="Produk 15">
+    <h2>Cita Fry</h2>
+    <p>Cocok untuk jenis deep frying untuk produk yang menggunakan adonan, menggoreng donat</p>
+    <p>Flavour: Bland</p>
+    <p>Warna: OFF White</p>
+    <p>Melting Point: 42°-45°C</p>
+    <span class="harga">Rp 405.900 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 16 -->
+<div class="card">
+    <img src="Images/Cita White Margarin.png" alt="Produk 16">
+    <h2>Cita White Margarin</h2>
+    <p>Cocok untuk Adonan Kue, Roti Manis, Krim</p>
+    <p>Flavour: Sweet Vanilla</p>
+    <p>Warna: White</p>
+    <p>Melting Point: 40°-42°C</p>
+    <span class="harga">Rp 370.400 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 17 -->
+<div class="card">
+    <img src="Images/Smazz Cream Margarin.png" alt="Produk 17">
+    <h2>Smazz Cream Margarin</h2>
+    <p>Cocok untuk Adonan Roti Manis & Krim Isian Roti</p>
+    <p>Flavour: Sweet Caramel Butter</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 42°-44°C</p>
+    <span class="harga">Rp 341.900 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+<!-- PRODUK 18 -->
+<div class="card">
+    <img src="Images/Compound.png" alt="Produk 18">
+    <h2>Smazz Bakery Compound</h2>
+    <p>Cocok untuk semua produk makanan yang membutuhkan rendah lemak</p>
+    <p>Flavour: Fruity</p>
+    <p>Warna: Yellow</p>
+    <p>Melting Point: 43°-46°C</p>
+    <span class="harga">Rp 267.700 (15kg)</span>
+    <a href="https://wa.me/6282340550003?text=Saya%20mau%20order%20Gold%20Bullion" class="btn">Order</a>
+</div>
+
+
+
+</section>
+
+<footer>
+    <p>© 2026 Katalog Margarin</p>
+</footer>
+
+</body>
+</html>
