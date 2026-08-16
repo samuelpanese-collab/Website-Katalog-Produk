@@ -9,213 +9,228 @@
 
 <title>Katalog Produk Sinar Meadow</title>
 
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
-
-
 <style>
 
-/* =========================================================
-   RESET
-========================================================= */
+/* =====================================================
+   DASAR
+===================================================== */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-
-/* =========================================================
-   BODY
-========================================================= */
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: #f4f6f7;
     color: #333;
 }
 
 
-/* =========================================================
+/* =====================================================
    HEADER
-========================================================= */
+===================================================== */
 
 header {
+    background: #5dade2;
     text-align: center;
     padding: 25px 20px 20px;
-    background: #5dade2;
-    color: black;
     position: relative;
 }
 
 header h1 {
+    font-size: 30px;
     font-weight: 800;
-    font-size: 28px;
-    margin-top: 5px;
+    color: #000;
+    margin-bottom: 6px;
 }
 
 header p {
-    font-weight: 400;
     font-size: 14px;
-    margin-top: 3px;
+    color: #000;
+    margin-bottom: 4px;
 }
 
 
-/* =========================================================
-   LOGO SINAR MEADOW
-========================================================= */
+/* LOGO SINAR MEADOW */
 
 .logo-utama {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 45px;
+    left: 15px;
+    top: 15px;
+    width: 55px;
     height: auto;
 }
 
 
-/* =========================================================
+/* =====================================================
    LOGO BRAND
-========================================================= */
+===================================================== */
 
 .logo-produk {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 12px;
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .logo-produk img {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-.logo-produk img:hover {
-    opacity: 1;
-    transform: scale(1.1);
 }
 
 
-/* =========================================================
-   CONTAINER
-========================================================= */
+/* =====================================================
+   CONTAINER PRODUK
+===================================================== */
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 25px 20px;
     max-width: 1400px;
     margin: auto;
+
+    padding: 30px 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 22px;
 }
 
 
-/* =========================================================
-   CARD
-========================================================= */
+/* =====================================================
+   CARD PRODUK
+===================================================== */
 
 .card {
     background: white;
-    width: 250px;
-    border-radius: 12px;
+
+    border-radius: 14px;
+
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
-    text-align: center;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.10);
+
     transition: 0.3s;
-    padding-bottom: 5px;
+
+    text-align: center;
+
+    padding-bottom: 15px;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
 }
 
 
-.card img {
+.card-image {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    height: 200px;
+
+    object-fit: contain;
+
+    background: #fff;
+
+    padding: 10px;
 }
 
 
 .card h2 {
-    margin: 12px 8px 8px;
     font-size: 18px;
-    font-weight: 700;
+
+    font-weight: 800;
+
+    padding: 10px 10px 5px;
 }
 
 
 .card p {
-    padding: 0 10px;
     font-size: 13px;
+
     line-height: 1.5;
+
+    padding: 2px 12px;
+
+    color: #555;
 }
 
 
 .harga {
     display: block;
+
     margin: 12px 10px;
+
+    font-size: 17px;
+
     font-weight: 800;
+
     color: #e63946;
-    font-size: 16px;
 }
 
 
-/* =========================================================
+/* =====================================================
    BUTTON ORDER
-========================================================= */
+===================================================== */
 
 .btn {
-    display: inline-block;
     width: calc(100% - 30px);
-    margin: 5px 15px 15px;
-    padding: 11px 15px;
+
+    margin: 5px 15px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
 
     background: #e63946;
+
     color: white;
 
-    text-decoration: none;
-    border: none;
-    border-radius: 6px;
-
-    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 700;
+
+    font-weight: 800;
 
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 .btn:hover {
     background: #c92d3a;
+
     transform: scale(1.02);
 }
 
 
-/* =========================================================
+/* =====================================================
    FOOTER
-========================================================= */
+===================================================== */
 
 footer {
-    text-align: center;
-    padding: 18px;
     background: #333;
+
     color: white;
-    margin-top: 20px;
+
+    text-align: center;
+
+    padding: 20px;
+
     font-size: 13px;
 }
 
 
-/* =========================================================
+/* =====================================================
    POPUP
-========================================================= */
+===================================================== */
 
 .popup {
     display: none;
@@ -233,6 +248,7 @@ footer {
     background: rgba(0,0,0,0.65);
 
     justify-content: center;
+
     align-items: center;
 
     padding: 20px;
@@ -241,12 +257,13 @@ footer {
 }
 
 
-/* =========================================================
+/* =====================================================
    POPUP BOX
-========================================================= */
+===================================================== */
 
 .popup-box {
     width: 100%;
+
     max-width: 500px;
 
     background: white;
@@ -257,54 +274,29 @@ footer {
 
     position: relative;
 
-    box-shadow: 0 15px 50px rgba(0,0,0,0.30);
-
-    animation: popupMuncul 0.25s ease;
+    box-shadow:
+        0 15px 50px rgba(0,0,0,0.3);
 }
 
 
-@keyframes popupMuncul {
-
-    from {
-        opacity: 0;
-        transform: scale(0.90);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-}
-
-
-/* =========================================================
-   CLOSE
-========================================================= */
-
-.tutup-popup {
+.close {
     position: absolute;
 
     right: 18px;
+
     top: 8px;
 
-    font-size: 30px;
+    font-size: 32px;
 
     color: #777;
 
     cursor: pointer;
-
-    font-weight: 500;
 }
 
-.tutup-popup:hover {
+.close:hover {
     color: #e63946;
 }
 
-
-/* =========================================================
-   POPUP TITLE
-========================================================= */
 
 .popup-box h2 {
     text-align: center;
@@ -315,7 +307,7 @@ footer {
 
     font-weight: 800;
 
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 
@@ -324,30 +316,32 @@ footer {
 
     font-size: 18px;
 
-    font-weight: 700;
-
     margin-bottom: 5px;
 }
 
 
-.harga-normal {
+.harga-popup {
     text-align: center;
 
     color: #666;
 
-    font-size: 13px;
+    font-size: 14px;
 
     margin-bottom: 20px;
 }
 
 
-/* =========================================================
+/* =====================================================
    JUMLAH
-========================================================= */
+===================================================== */
 
-.judul-input {
-    font-size: 14px;
+.label {
+    display: block;
+
     font-weight: 700;
+
+    font-size: 14px;
+
     margin-bottom: 8px;
 }
 
@@ -356,6 +350,7 @@ footer {
     display: flex;
 
     justify-content: center;
+
     align-items: center;
 
     gap: 15px;
@@ -366,15 +361,19 @@ footer {
 
 .jumlah-btn {
     width: 42px;
+
     height: 42px;
 
     border: none;
+
     border-radius: 50%;
 
     background: #e63946;
+
     color: white;
 
-    font-size: 22px;
+    font-size: 23px;
+
     font-weight: bold;
 
     cursor: pointer;
@@ -387,35 +386,37 @@ footer {
 
 
 #jumlahKarton {
-    width: 75px;
+    width: 80px;
+
+    padding: 8px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
 
     text-align: center;
 
     font-size: 20px;
 
     font-weight: 800;
-
-    border: 1px solid #ddd;
-
-    border-radius: 8px;
-
-    padding: 7px;
 }
 
 
-/* =========================================================
+/* =====================================================
    PROMO
-========================================================= */
+===================================================== */
 
 .promo-title {
     font-size: 14px;
-    font-weight: 700;
+
+    font-weight: 800;
+
     margin-bottom: 10px;
 }
 
 
 .promo-item {
-    border: 2px solid #eeeeee;
+    border: 2px solid #eee;
 
     border-radius: 10px;
 
@@ -424,39 +425,41 @@ footer {
     margin-bottom: 8px;
 
     cursor: pointer;
-
-    transition: 0.2s;
 }
-
 
 .promo-item:hover {
     border-color: #e63946;
+
     background: #fff7f7;
 }
 
 
 .promo-item label {
-    display: block;
     cursor: pointer;
 
+    display: block;
+
     font-size: 13px;
-    line-height: 1.5;
+
+    line-height: 1.6;
 }
 
 
 .promo-item input {
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
 
-.promo-item strong {
+.promo-diskon {
     color: #e63946;
+
+    font-weight: 700;
 }
 
 
-/* =========================================================
+/* =====================================================
    RINGKASAN
-========================================================= */
+===================================================== */
 
 .ringkasan {
     background: #f7f7f7;
@@ -466,31 +469,39 @@ footer {
     padding: 15px;
 
     margin-top: 18px;
+
     margin-bottom: 15px;
 }
 
 
-.baris-harga {
+.baris {
     display: flex;
 
     justify-content: space-between;
 
-    gap: 15px;
+    gap: 10px;
 
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 
     font-size: 14px;
 }
 
 
-.baris-harga.total {
+.diskon {
+    color: #e63946;
+
+    font-weight: 800;
+}
+
+
+.total {
     border-top: 1px solid #ddd;
 
-    padding-top: 10px;
+    padding-top: 12px;
 
     margin-top: 10px;
 
-    font-size: 18px;
+    font-size: 19px;
 
     font-weight: 800;
 
@@ -498,22 +509,16 @@ footer {
 }
 
 
-.diskon {
-    color: #e63946;
-    font-weight: 700;
-}
-
-
-/* =========================================================
+/* =====================================================
    WHATSAPP
-========================================================= */
+===================================================== */
 
-.btn-whatsapp {
+.btn-wa {
     width: 100%;
 
-    border: none;
-
     padding: 14px;
+
+    border: none;
 
     border-radius: 10px;
 
@@ -521,64 +526,53 @@ footer {
 
     color: white;
 
-    font-family: 'Poppins', sans-serif;
-
     font-size: 15px;
 
     font-weight: 800;
 
     cursor: pointer;
-
-    transition: 0.3s;
 }
 
-
-.btn-whatsapp:hover {
+.btn-wa:hover {
     background: #1ebe5d;
-
-    transform: scale(1.02);
 }
 
 
-/* =========================================================
+/* =====================================================
    MOBILE
-========================================================= */
+===================================================== */
 
 @media (max-width: 600px) {
 
     header {
-        padding-top: 60px;
+        padding-top: 70px;
     }
 
     header h1 {
         font-size: 24px;
     }
 
-    header p {
-        font-size: 12px;
-    }
-
     .logo-utama {
-        width: 40px;
-        top: 8px;
-        left: 8px;
+        width: 45px;
+        left: 10px;
+        top: 10px;
     }
 
     .logo-produk img {
-        width: 32px;
-        height: 32px;
+        width: 34px;
+        height: 34px;
     }
 
     .container {
-        padding: 15px 10px;
+        grid-template-columns:
+            repeat(2, 1fr);
+
         gap: 12px;
+
+        padding: 15px 10px;
     }
 
-    .card {
-        width: calc(50% - 6px);
-    }
-
-    .card img {
+    .card-image {
         height: 140px;
     }
 
@@ -596,11 +590,6 @@ footer {
 
     .btn {
         font-size: 11px;
-        padding: 9px;
-    }
-
-    .popup-box {
-        padding: 20px;
     }
 
 }
@@ -613,14 +602,11 @@ footer {
 <body>
 
 
-<!-- =========================================================
+<!-- =====================================================
      HEADER
-========================================================= -->
+===================================================== -->
 
 <header>
-
-
-    <!-- LOGO SINAR MEADOW -->
 
     <img
         src="Images/sinarmeadow.png"
@@ -628,29 +614,24 @@ footer {
         alt="Sinar Meadow"
     >
 
-
     <h1>
         Katalog Produk
     </h1>
 
-
     <p>
         Produk SINAR MEADOW yang berkualitas untuk kebutuhan bakery & usaha Anda
     </p>
-
 
     <p>
         Distributor CV BERKAT USAHA
     </p>
 
 
-    <!-- LOGO BRAND -->
-
     <div class="logo-produk">
 
         <img
             src="Images/Logo MM safire.png"
-            alt="MM Safire"
+            alt="Moremade"
         >
 
         <img
@@ -675,1035 +656,19 @@ footer {
 
     </div>
 
-
 </header>
 
 
-
-<!-- =========================================================
-     PRODUK
-========================================================= -->
-
-<section class="container">
-
-
-
-<!-- =========================================================
-     PRODUK 1
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Moremade Safire.png"
-        alt="Moremade Safire Butter Blend"
-    >
-
-    <h2>
-        Moremade Safire Butter Blend
-    </h2>
-
-    <p>
-        Tekstur lembut, cocok untuk roti, Cake & Cookies
-    </p>
-
-    <p>
-        Flavour: Butter
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 36°-38°C
-    </p>
-
-    <span class="harga">
-        Rp 2.124.300 (17kg)
-    </span>
-
-
-    <!-- =====================================================
-         ✏️ UBAH PROMO PRODUK 1 DI SINI
-    ====================================================== -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Moremade Safire Butter Blend',
-            2124300,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 2
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/MCBB 200g.png"
-        alt="Mother Choice Butter Blend"
-    >
-
-    <h2>
-        Mother Choice Butter Blend
-    </h2>
-
-    <p>
-        Rasa gurih premium untuk bakery & UMKM
-    </p>
-
-    <p>
-        Flavour: Butter
-    </p>
-
-    <p>
-        Warna: Pale Yellow
-    </p>
-
-    <p>
-        Melting Point: 37°-39°C
-    </p>
-
-    <span class="harga">
-        Rp 810.000 (60x200gr)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 2 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Mother Choice Butter Blend',
-            810000,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 3
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/GB Grand Butter Blend.png"
-        alt="GB Grand Butter Blend"
-    >
-
-    <h2>
-        GB Grand Butter Blend
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti, Donat & Cake
-    </p>
-
-    <p>
-        Flavour: Creamy Butter
-    </p>
-
-    <p>
-        Warna: Light Yellow
-    </p>
-
-    <p>
-        Melting Point: 36°-38°C
-    </p>
-
-    <span class="harga">
-        Rp 1.185.800 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 3 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Grand Butter Blend',
-            1185800,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 4
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Merrywhip.png"
-        alt="GB Merrywhip Cream Fat"
-    >
-
-    <h2>
-        GB Merrywhip Cream Fat
-    </h2>
-
-    <p>
-        Cocok untuk Creaming untuk dekorasi kue
-    </p>
-
-    <p>
-        Flavour: Butter
-    </p>
-
-    <p>
-        Warna: Shiny White
-    </p>
-
-    <p>
-        Melting Point: 37°-39°C
-    </p>
-
-    <span class="harga">
-        Rp 824.700 (16kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 4 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Merrywhip Cream Fat',
-            824700,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 5
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/GB BOS.png"
-        alt="GB BOS"
-    >
-
-    <h2>
-        GB BOS
-    </h2>
-
-    <p>
-        Cocok Untuk Kue, Roti Manis & Donat
-    </p>
-
-    <p>
-        Flavour: Creamy Butter
-    </p>
-
-    <p>
-        Warna: Shiny Yellow
-    </p>
-
-    <p>
-        Melting Point: 33°-35°C
-    </p>
-
-    <span class="harga">
-        Rp 578.000 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 5 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB BOS',
-            578000,
-            [
-                ['Beli 7 karton', 0],
-                ['Beli 11 karton', 7748],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 6
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/GB Prime Cake Margarin.png"
-        alt="GB Prime Cake Margarin"
-    >
-
-    <h2>
-        GB Prime Cake Margarin
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti, Kue seribu Lapis & Adonan Donat
-    </p>
-
-    <p>
-        Flavour: Strong Butter
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 37°-39°C
-    </p>
-
-    <span class="harga">
-        Rp 554.400 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 6 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Prime Cake Margarin',
-            554400,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 7
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/MEDAL.png"
-        alt="GB Medal Bread Fat"
-    >
-
-    <h2>
-        GB Medal Bread Fat
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti, Dinner Roll, Humburger, Donat & Roti Manis
-    </p>
-
-    <p>
-        Flavour: Mild Butter
-    </p>
-
-    <p>
-        Warna: OFF Yellow
-    </p>
-
-    <p>
-        Melting Point: 41°-43°C
-    </p>
-
-    <span class="harga">
-        Rp 699.000 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 7 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Medal Bread Fat',
-            699000,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 8
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Flake Pastry.png"
-        alt="GB Flake Pastry Shortening"
-    >
-
-    <h2>
-        GB Flake Pastry Shortening
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Puff Pastry, Pia & Sosis Gulung
-    </p>
-
-    <p>
-        Flavour: Mild Butter
-    </p>
-
-    <p>
-        Warna: Light Yellow
-    </p>
-
-    <p>
-        Melting Point: 46°-48°C
-    </p>
-
-    <span class="harga">
-        Rp 714.100 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 8 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Flake Pastry Shortening',
-            714100,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 9
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Bread-o.png"
-        alt="GB Bread-O Bread Fat"
-    >
-
-    <h2>
-        GB Bread-O Bread Fat
-    </h2>
-
-    <p>
-        Cocok untuk Roti Tawar
-    </p>
-
-    <p>
-        Flavour: Bland
-    </p>
-
-    <p>
-        Warna: OFF White
-    </p>
-
-    <p>
-        Melting Point: 40°-46°C
-    </p>
-
-    <span class="harga">
-        Rp 553.400 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 9 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Bread-O Bread Fat',
-            553400,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 0],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 10
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/BOS STAR.png"
-        alt="GB BOS Star"
-    >
-
-    <h2>
-        GB BOS Star
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti Manis, Donat & Cookies
-    </p>
-
-    <p>
-        Flavour: Creamy Butter
-    </p>
-
-    <p>
-        Warna: Shiny Yellow
-    </p>
-
-    <p>
-        Melting Point: 35°-37°C
-    </p>
-
-    <span class="harga">
-        Rp 741.700 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 10 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB BOS Star',
-            741700,
-            [
-                ['Beli 7 karton', 0],
-                ['Beli 11 karton', 7748],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 11
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/GB Frymasta.png"
-        alt="GB Frymasta"
-    >
-
-    <h2>
-        GB Frymasta
-    </h2>
-
-    <p>
-        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan
-    </p>
-
-    <p>
-        Flavour: Bland
-    </p>
-
-    <p>
-        Warna: OFF White
-    </p>
-
-    <p>
-        Melting Point: 40°-42°C
-    </p>
-
-    <span class="harga">
-        Rp 543.900 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 11 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Frymasta',
-            543900,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 7387],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 12
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/frymasta star.png"
-        alt="GB Frymasta Star"
-    >
-
-    <h2>
-        GB Frymasta Star
-    </h2>
-
-    <p>
-        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan
-    </p>
-
-    <p>
-        Flavour: Creamy (Savoury)
-    </p>
-
-    <p>
-        Warna: OFF White
-    </p>
-
-    <p>
-        Melting Point: 43°-45°C
-    </p>
-
-    <span class="harga">
-        Rp 800.700 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 12 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'GB Frymasta Star',
-            800700,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 7387],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 13
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/MC 15.png"
-        alt="Mother Choice Bakery Margarin"
-    >
-
-    <h2>
-        Mother Choice Bakery Margarin
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti Manis, Donat & Martabak
-    </p>
-
-    <p>
-        Flavour: Fruity Butter
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 37°-39°C
-    </p>
-
-    <span class="harga">
-        Rp 404.600 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 13 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Mother Choice Bakery Margarin',
-            404600,
-            [
-                ['Beli 7 karton', 7297],
-                ['Beli 11 karton', 14595],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 14
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/MC 4,5.png"
-        alt="Mother Choice MultiPurpose MGR"
-    >
-
-    <h2>
-        Mother Choice MultiPurpose MGR
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti Manis, Donat & Martabak
-    </p>
-
-    <p>
-        Flavour: Fruity Butter
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 37°-39°C
-    </p>
-
-    <span class="harga">
-        Rp 141.900 (4,5kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 14 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Mother Choice MultiPurpose MGR',
-            141900,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 3153],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 15
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Cita FRY.png"
-        alt="Cita Fry"
-    >
-
-    <h2>
-        Cita Fry
-    </h2>
-
-    <p>
-        Cocok untuk jenis deep frying untuk produk yang menggunakan adonan
-    </p>
-
-    <p>
-        Flavour: Bland
-    </p>
-
-    <p>
-        Warna: OFF White
-    </p>
-
-    <p>
-        Melting Point: 42°-45°C
-    </p>
-
-    <span class="harga">
-        Rp 405.900 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 15 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Cita Fry',
-            405900,
-            [
-                ['Beli 7 karton', 7297],
-                ['Beli 11 karton', 15595],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 16
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Cita White Margarin.png"
-        alt="Cita White Margarin"
-    >
-
-    <h2>
-        Cita White Margarin
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Kue, Roti Manis, Krim
-    </p>
-
-    <p>
-        Flavour: Sweet Vanilla
-    </p>
-
-    <p>
-        Warna: White
-    </p>
-
-    <p>
-        Melting Point: 40°-42°C
-    </p>
-
-    <span class="harga">
-        Rp 370.400 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 16 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Cita White Margarin',
-            370400,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 3333],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 17
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Smazz Cream Margarin.png"
-        alt="Smazz Cream Margarin"
-    >
-
-    <h2>
-        Smazz Cream Margarin
-    </h2>
-
-    <p>
-        Cocok untuk Adonan Roti Manis & Krim Isian Roti
-    </p>
-
-    <p>
-        Flavour: Sweet Caramel Butter
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 42°-44°C
-    </p>
-
-    <span class="harga">
-        Rp 341.900 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 17 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Smazz Cream Margarin',
-            341900,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 6126],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
-
-<!-- =========================================================
-     PRODUK 18
-========================================================= -->
-
-<div class="card">
-
-    <img
-        src="Images/Compound.png"
-        alt="Smazz Bakery Compound"
-    >
-
-    <h2>
-        Smazz Bakery Compound
-    </h2>
-
-    <p>
-        Cocok untuk semua produk makanan yang membutuhkan rendah lemak
-    </p>
-
-    <p>
-        Flavour: Fruity
-    </p>
-
-    <p>
-        Warna: Yellow
-    </p>
-
-    <p>
-        Melting Point: 43°-46°C
-    </p>
-
-    <span class="harga">
-        Rp 267.700 (15kg)
-    </span>
-
-
-    <!-- ✏️ UBAH PROMO PRODUK 18 DI SINI -->
-
-    <button
-        class="btn"
-        onclick="bukaPromo(
-            'Smazz Bakery Compound',
-            267700,
-            [
-                ['Beli 6 karton', 0],
-                ['Beli 11 karton', 6036],
-            ]
-        )"
-    >
-        ORDER
-    </button>
-
-</div>
-
-
+<!-- =====================================================
+     PRODUK AKAN MUNCUL DI SINI
+===================================================== -->
+
+<section
+    class="container"
+    id="daftarProduk"
+>
 </section>
 
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
 
 <footer>
 
@@ -1712,23 +677,20 @@ footer {
 </footer>
 
 
-
-<!-- =========================================================
-     POPUP PROMO
-========================================================= -->
+<!-- =====================================================
+     POPUP ORDER
+===================================================== -->
 
 <div
-    id="popupPromo"
     class="popup"
+    id="popup"
 >
-
 
     <div class="popup-box">
 
-
         <span
-            class="tutup-popup"
-            onclick="tutupPromo()"
+            class="close"
+            onclick="tutupPopup()"
         >
             &times;
         </span>
@@ -1739,27 +701,29 @@ footer {
         </h2>
 
 
-        <h3 id="namaProdukPromo">
+        <h3 id="namaProduk">
             Nama Produk
         </h3>
 
 
-        <p class="harga-normal">
+        <div class="harga-popup">
 
-            Harga per karton:
+            Harga:
 
-            <strong id="hargaProdukPromo">
+            <strong id="hargaProduk">
                 Rp 0
             </strong>
 
-        </p>
+            / karton
+
+        </div>
 
 
         <!-- JUMLAH -->
 
-        <div class="judul-input">
+        <span class="label">
             Jumlah Pembelian
-        </div>
+        </span>
 
 
         <div class="jumlah-box">
@@ -1791,15 +755,16 @@ footer {
         </div>
 
 
-        <!-- PROMO AKAN DIBUAT OTOMATIS -->
+        <!-- PROMO -->
 
         <div class="promo-title">
+
             Pilih Program Promo
+
         </div>
 
 
         <div id="daftarPromo">
-
         </div>
 
 
@@ -1808,10 +773,10 @@ footer {
         <div class="ringkasan">
 
 
-            <div class="baris-harga">
+            <div class="baris">
 
                 <span>
-                    Harga
+                    Harga/karton
                 </span>
 
                 <strong id="ringkasanHarga">
@@ -1821,7 +786,7 @@ footer {
             </div>
 
 
-            <div class="baris-harga">
+            <div class="baris">
 
                 <span>
                     Jumlah
@@ -1833,14 +798,14 @@ footer {
                         1
                     </span>
 
-                    Karton
+                    karton
 
                 </strong>
 
             </div>
 
 
-            <div class="baris-harga">
+            <div class="baris">
 
                 <span>
                     Subtotal
@@ -1853,14 +818,14 @@ footer {
             </div>
 
 
-            <div class="baris-harga">
+            <div class="baris">
 
                 <span>
-                    Diskon
+                    Diskon/karton
                 </span>
 
                 <strong
-                    id="diskon"
+                    id="diskonPerKarton"
                     class="diskon"
                 >
                     Rp 0
@@ -1869,7 +834,23 @@ footer {
             </div>
 
 
-            <div class="baris-harga total">
+            <div class="baris">
+
+                <span>
+                    Total Diskon
+                </span>
+
+                <strong
+                    id="totalDiskon"
+                    class="diskon"
+                >
+                    Rp 0
+                </strong>
+
+            </div>
+
+
+            <div class="baris total">
 
                 <span>
                     TOTAL
@@ -1885,17 +866,14 @@ footer {
         </div>
 
 
-        <!-- WHATSAPP -->
-
         <button
-            class="btn-whatsapp"
-            onclick="lanjutOrder()"
+            class="btn-wa"
+            onclick="orderWhatsApp()"
         >
 
             💬 ORDER VIA WHATSAPP
 
         </button>
-
 
     </div>
 
@@ -1903,59 +881,718 @@ footer {
 
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
 <script>
 
-
-/* =========================================================
+/* =====================================================
    NOMOR WHATSAPP
-   ✏️ GANTI DENGAN NOMOR KAMU
-========================================================= */
+   GANTI NOMOR DI SINI
+===================================================== */
 
 const nomorWA = "6282340550003";
 
 
-/* =========================================================
-   DATA PRODUK YANG SEDANG DIPILIH
-========================================================= */
 
-let produkDipilih = "";
+/* =====================================================
+   DATA PRODUK
+=====================================================
+
+   CARA MENGUBAH PRODUK:
+
+   1. nama     = nama produk
+   2. gambar   = nama file gambar di folder Images
+   3. harga    = harga per karton
+   4. deskripsi= keterangan produk
+   5. promo    = program promo
+
+   FORMAT PROMO:
+
+   [
+       ["Beli 11 karton", 7748],
+       ["Beli 20 karton", 10000]
+   ]
+
+   ANGKA TERAKHIR ADALAH DISKON PER KARTON.
+
+===================================================== */
+
+
+const produk = [
+
+
+    /* =================================================
+       PRODUK 1
+    ================================================= */
+
+    {
+        nama: "Moremade Safire Butter Blend",
+
+        gambar: "Images/Moremade Safire.png",
+
+        harga: 2124300,
+
+        deskripsi: [
+            "Tekstur lembut, cocok untuk roti, Cake & Cookies",
+            "Flavour: Butter",
+            "Warna: Yellow",
+            "Melting Point: 36°-38°C"
+        ],
+
+        promo: [
+
+            /* UBAH PROMO DI SINI */
+
+            ["Beli 5 karton", 50000],
+
+            ["Beli 10 karton", 150000],
+
+            ["Beli 20 karton", 350000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 2
+    ================================================= */
+
+    {
+        nama: "Mother Choice Butter Blend",
+
+        gambar: "Images/MCBB 200g.png",
+
+        harga: 810000,
+
+        deskripsi: [
+            "Rasa gurih premium untuk bakery & UMKM",
+            "Flavour: Butter",
+            "Warna: Pale Yellow",
+            "Melting Point: 37°-39°C"
+        ],
+
+        promo: [
+
+            /* UBAH PROMO DI SINI */
+
+            ["Beli 5 karton", 50000],
+
+            ["Beli 10 karton", 150000],
+
+            ["Beli 20 karton", 350000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 3
+    ================================================= */
+
+    {
+        nama: "GB Grand Butter Blend",
+
+        gambar: "Images/GB Grand Butter Blend.png",
+
+        harga: 1185800,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti, Donat & Cake",
+            "Flavour: Creamy Butter",
+            "Warna: Light Yellow",
+            "Melting Point: 36°-38°C"
+        ],
+
+        promo: [
+
+            ["Beli 3 karton", 30000],
+
+            ["Beli 6 karton", 80000],
+
+            ["Beli 10 karton", 200000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 4
+    ================================================= */
+
+    {
+        nama: "GB Merrywhip Cream Fat",
+
+        gambar: "Images/Merrywhip.png",
+
+        harga: 824700,
+
+        deskripsi: [
+            "Cocok untuk Creaming untuk dekorasi kue",
+            "Flavour: Butter",
+            "Warna: Shiny White",
+            "Melting Point: 37°-39°C"
+        ],
+
+        promo: [
+
+            ["Beli 3 karton", 30000],
+
+            ["Beli 6 karton", 75000],
+
+            ["Beli 10 karton", 150000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 5
+    ================================================= */
+
+    {
+        nama: "GB BOS",
+
+        gambar: "Images/GB BOS.png",
+
+        harga: 578000,
+
+        deskripsi: [
+            "Cocok Untuk Kue, Roti Manis & Donat",
+            "Flavour: Creamy Butter",
+            "Warna: Shiny Yellow",
+            "Melting Point: 33°-35°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 25000],
+
+            ["Beli 10 karton", 75000],
+
+            ["Beli 20 karton", 150000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 6
+    ================================================= */
+
+    {
+        nama: "GB Prime Cake Margarin",
+
+        gambar: "Images/GB Prime Cake Margarin.png",
+
+        harga: 554400,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti, Kue seribu Lapis & Adonan Donat",
+            "Flavour: Strong Butter",
+            "Warna: Yellow",
+            "Melting Point: 37°-39°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 25000],
+
+            ["Beli 10 karton", 70000],
+
+            ["Beli 20 karton", 150000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 7
+    ================================================= */
+
+    {
+        nama: "GB Medal Bread Fat",
+
+        gambar: "Images/MEDAL.png",
+
+        harga: 699000,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti, Dinner Roll, Humburger, Donat & Roti Manis",
+            "Flavour: Mild Butter",
+            "Warna: OFF Yellow",
+            "Melting Point: 41°-43°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 30000],
+
+            ["Beli 10 karton", 80000],
+
+            ["Beli 20 karton", 180000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 8
+    ================================================= */
+
+    {
+        nama: "GB Flake Pastry Shortening",
+
+        gambar: "Images/Flake Pastry.png",
+
+        harga: 714100,
+
+        deskripsi: [
+            "Cocok untuk Adonan Puff Pastry, Pia & Sosis Gulung",
+            "Flavour: Mild Butter",
+            "Warna: Light Yellow",
+            "Melting Point: 46°-48°C"
+        ],
+
+        promo: [
+
+            ["Beli 3 karton", 30000],
+
+            ["Beli 6 karton", 70000],
+
+            ["Beli 10 karton", 150000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 9
+    ================================================= */
+
+    {
+        nama: "GB Bread-O Bread Fat",
+
+        gambar: "Images/Bread-o.png",
+
+        harga: 553400,
+
+        deskripsi: [
+            "Cocok untuk Roti Tawar",
+            "Flavour: Bland",
+            "Warna: OFF White",
+            "Melting Point: 40°-46°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 25000],
+
+            ["Beli 10 karton", 60000],
+
+            ["Beli 20 karton", 120000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 10
+    ================================================= */
+
+    {
+        nama: "GB BOS Star",
+
+        gambar: "Images/BOS STAR.png",
+
+        harga: 741700,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti Manis, Donat & Cookies",
+            "Flavour: Creamy Butter",
+            "Warna: Shiny Yellow",
+            "Melting Point: 35°-37°C"
+        ],
+
+        promo: [
+
+            ["Beli 3 karton", 30000],
+
+            ["Beli 6 karton", 80000],
+
+            ["Beli 10 karton", 180000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 11
+    ================================================= */
+
+    {
+        nama: "GB Frymasta",
+
+        gambar: "Images/GB Frymasta.png",
+
+        harga: 543900,
+
+        deskripsi: [
+            "Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan",
+            "Flavour: Bland",
+            "Warna: OFF White",
+            "Melting Point: 40°-42°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 25000],
+
+            ["Beli 10 karton", 70000],
+
+            ["Beli 20 karton", 150000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 12
+    ================================================= */
+
+    {
+        nama: "GB Frymasta Star",
+
+        gambar: "Images/frymasta star.png",
+
+        harga: 800700,
+
+        deskripsi: [
+            "Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan",
+            "Flavour: Creamy (Savoury)",
+            "Warna: OFF White",
+            "Melting Point: 43°-45°C"
+        ],
+
+        promo: [
+
+            ["Beli 3 karton", 30000],
+
+            ["Beli 6 karton", 80000],
+
+            ["Beli 10 karton", 180000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 13
+    ================================================= */
+
+    {
+        nama: "Mother Choice Bakery Margarin",
+
+        gambar: "Images/MC 15.png",
+
+        harga: 404600,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti Manis, Donat & Martabak",
+            "Flavour: Fruity Butter",
+            "Warna: Yellow",
+            "Melting Point: 37°-39°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 20000],
+
+            ["Beli 10 karton", 60000],
+
+            ["Beli 20 karton", 120000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 14
+    ================================================= */
+
+    {
+        nama: "Mother Choice MultiPurpose MGR",
+
+        gambar: "Images/MC 4,5.png",
+
+        harga: 141900,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti Manis, Donat & Martabak",
+            "Flavour: Fruity Butter",
+            "Warna: Yellow",
+            "Melting Point: 37°-39°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 10000],
+
+            ["Beli 10 karton", 30000],
+
+            ["Beli 20 karton", 60000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 15
+    ================================================= */
+
+    {
+        nama: "Cita Fry",
+
+        gambar: "Images/Cita FRY.png",
+
+        harga: 405900,
+
+        deskripsi: [
+            "Cocok untuk jenis deep frying untuk produk yang menggunakan adonan",
+            "Flavour: Bland",
+            "Warna: OFF White",
+            "Melting Point: 42°-45°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 25000],
+
+            ["Beli 10 karton", 60000],
+
+            ["Beli 20 karton", 120000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 16
+    ================================================= */
+
+    {
+        nama: "Cita White Margarin",
+
+        gambar: "Images/Cita White Margarin.png",
+
+        harga: 370400,
+
+        deskripsi: [
+            "Cocok untuk Adonan Kue, Roti Manis, Krim",
+            "Flavour: Sweet Vanilla",
+            "Warna: White",
+            "Melting Point: 40°-42°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 20000],
+
+            ["Beli 10 karton", 50000],
+
+            ["Beli 20 karton", 100000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 17
+    ================================================= */
+
+    {
+        nama: "Smazz Cream Margarin",
+
+        gambar: "Images/Smazz Cream Margarin.png",
+
+        harga: 341900,
+
+        deskripsi: [
+            "Cocok untuk Adonan Roti Manis & Krim Isian Roti",
+            "Flavour: Sweet Caramel Butter",
+            "Warna: Yellow",
+            "Melting Point: 42°-44°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 20000],
+
+            ["Beli 10 karton", 50000],
+
+            ["Beli 20 karton", 100000]
+
+        ]
+    },
+
+
+    /* =================================================
+       PRODUK 18
+    ================================================= */
+
+    {
+        nama: "Smazz Bakery Compound",
+
+        gambar: "Images/Compound.png",
+
+        harga: 267700,
+
+        deskripsi: [
+            "Cocok untuk semua produk makanan yang membutuhkan rendah lemak",
+            "Flavour: Fruity",
+            "Warna: Yellow",
+            "Melting Point: 43°-46°C"
+        ],
+
+        promo: [
+
+            ["Beli 5 karton", 15000],
+
+            ["Beli 10 karton", 40000],
+
+            ["Beli 20 karton", 80000]
+
+        ]
+    }
+
+];
+
+
+
+/* =====================================================
+   VARIABEL ORDER
+===================================================== */
+
+let produkDipilih = null;
 
 let hargaDipilih = 0;
 
 let promoDipilih = [];
 
 
-/* =========================================================
+
+/* =====================================================
+   FORMAT RUPIAH
+===================================================== */
+
+function rupiah(angka) {
+
+    return new Intl.NumberFormat(
+        "id-ID",
+        {
+            style: "currency",
+            currency: "IDR",
+            maximumFractionDigits: 0
+        }
+    ).format(angka);
+
+}
+
+
+
+/* =====================================================
+   TAMPILKAN PRODUK
+===================================================== */
+
+function tampilkanProduk() {
+
+    const container =
+        document.getElementById(
+            "daftarProduk"
+        );
+
+    container.innerHTML = "";
+
+
+    produk.forEach(
+        function(item, index) {
+
+            let deskripsiHTML = "";
+
+
+            item.deskripsi.forEach(
+                function(teks) {
+
+                    deskripsiHTML +=
+                        `<p>${teks}</p>`;
+
+                }
+            );
+
+
+            container.innerHTML += `
+
+                <div class="card">
+
+                    <img
+                        src="${item.gambar}"
+                        class="card-image"
+                        alt="${item.nama}"
+                    >
+
+                    <h2>
+                        ${item.nama}
+                    </h2>
+
+                    ${deskripsiHTML}
+
+                    <span class="harga">
+                        ${rupiah(item.harga)}
+                    </span>
+
+                    <button
+                        class="btn"
+                        onclick="bukaPopup(${index})"
+                    >
+                        ORDER
+                    </button>
+
+                </div>
+
+            `;
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
    BUKA POPUP
-========================================================= */
+===================================================== */
 
-function bukaPromo(
-    namaProduk,
-    hargaProduk,
-    daftarPromo
-) {
+function bukaPopup(index) {
 
+    produkDipilih =
+        produk[index];
 
-    produkDipilih = namaProduk;
+    hargaDipilih =
+        produk[index].harga;
 
-    hargaDipilih = hargaProduk;
-
-    promoDipilih = daftarPromo;
+    promoDipilih =
+        produk[index].promo;
 
 
     document.getElementById(
-        "namaProdukPromo"
-    ).innerText = namaProduk;
-
-
-    document.getElementById(
-        "hargaProdukPromo"
+        "namaProduk"
     ).innerText =
-        formatRupiah(hargaProduk);
+        produk[index].nama;
+
+
+    document.getElementById(
+        "hargaProduk"
+    ).innerText =
+        rupiah(
+            produk[index].harga
+        );
 
 
     document.getElementById(
@@ -1963,11 +1600,11 @@ function bukaPromo(
     ).value = 1;
 
 
-    buatDaftarPromo();
+    buatPromo();
 
 
     document.getElementById(
-        "popupPromo"
+        "popup"
     ).style.display = "flex";
 
 
@@ -1977,25 +1614,24 @@ function bukaPromo(
 
 
 
-/* =========================================================
-   MEMBUAT PROMO OTOMATIS
-========================================================= */
+/* =====================================================
+   BUAT DAFTAR PROMO
+===================================================== */
 
-function buatDaftarPromo() {
+function buatPromo() {
 
-
-    const tempatPromo =
+    const tempat =
         document.getElementById(
             "daftarPromo"
         );
 
 
-    tempatPromo.innerHTML = "";
+    tempat.innerHTML = "";
 
 
     /* HARGA NORMAL */
 
-    tempatPromo.innerHTML += `
+    tempat.innerHTML += `
 
         <div class="promo-item">
 
@@ -2009,9 +1645,7 @@ function buatDaftarPromo() {
                     onchange="hitungTotal()"
                 >
 
-                <strong>
-                    Harga Normal
-                </strong>
+                Harga Normal
 
             </label>
 
@@ -2020,18 +1654,12 @@ function buatDaftarPromo() {
     `;
 
 
-    /* PROMO PRODUK */
+    /* PROMO */
 
     promoDipilih.forEach(
-        function(promo, index)
-        {
+        function(promo, index) {
 
-            let nama = promo[0];
-
-            let diskon = promo[1];
-
-
-            tempatPromo.innerHTML += `
+            tempat.innerHTML += `
 
                 <div class="promo-item">
 
@@ -2045,13 +1673,18 @@ function buatDaftarPromo() {
                         >
 
                         <strong>
-                            ${nama}
+                            ${promo[0]}
                         </strong>
 
                         <br>
 
-                        Diskon:
-                        ${formatRupiah(diskon)}
+                        <span class="promo-diskon">
+
+                            Diskon
+                            ${rupiah(promo[1])}
+                            / karton
+
+                        </span>
 
                     </label>
 
@@ -2066,112 +1699,12 @@ function buatDaftarPromo() {
 
 
 
-/* =========================================================
-   TUTUP POPUP
-========================================================= */
-
-function tutupPromo() {
-
-
-    document.getElementById(
-        "popupPromo"
-    ).style.display = "none";
-
-}
-
-
-
-/* =========================================================
-   TAMBAH
-========================================================= */
-
-function tambahJumlah() {
-
-
-    let jumlah =
-        parseInt(
-            document.getElementById(
-                "jumlahKarton"
-            ).value
-        );
-
-
-    if (
-        isNaN(jumlah)
-        ||
-        jumlah < 1
-    ) {
-
-        jumlah = 1;
-
-    }
-
-
-    jumlah++;
-
-
-    document.getElementById(
-        "jumlahKarton"
-    ).value = jumlah;
-
-
-    hitungTotal();
-
-}
-
-
-
-/* =========================================================
-   KURANG
-========================================================= */
-
-function kurangJumlah() {
-
-
-    let jumlah =
-        parseInt(
-            document.getElementById(
-                "jumlahKarton"
-            ).value
-        );
-
-
-    if (
-        isNaN(jumlah)
-        ||
-        jumlah < 1
-    ) {
-
-        jumlah = 1;
-
-    }
-
-
-    if (jumlah > 1) {
-
-        jumlah--;
-
-    }
-
-
-    document.getElementById(
-        "jumlahKarton"
-    ).value = jumlah;
-
-
-    hitungTotal();
-
-}
-
-
-
-/* =========================================================
+/* =====================================================
    HITUNG TOTAL
-========================================================= */
+===================================================== */
 
 function hitungTotal() {
 
-
     let jumlah =
         parseInt(
             document.getElementById(
@@ -2181,8 +1714,7 @@ function hitungTotal() {
 
 
     if (
-        isNaN(jumlah)
-        ||
+        isNaN(jumlah) ||
         jumlah < 1
     ) {
 
@@ -2195,9 +1727,18 @@ function hitungTotal() {
     }
 
 
-    let subtotal =
-        hargaDipilih * jumlah;
+    /* ==========================================
+       SUBTOTAL
+    ========================================== */
 
+    let subtotal =
+        hargaDipilih *
+        jumlah;
+
+
+    /* ==========================================
+       PROMO
+    ========================================== */
 
     let pilihan =
         document.querySelector(
@@ -2205,12 +1746,11 @@ function hitungTotal() {
         );
 
 
-    let diskon = 0;
+    let diskonPerKarton = 0;
 
 
     if (
-        pilihan
-        &&
+        pilihan &&
         pilihan.value !== "-1"
     ) {
 
@@ -2225,46 +1765,70 @@ function hitungTotal() {
 
 
         /*
-         * Promo hanya aktif
-         * jika jumlah memenuhi syarat.
-         *
          * Contoh:
-         * "Beli 5 karton"
-         * berarti minimal 5 karton.
+         *
+         * "Beli 11 karton"
+         *
+         * menjadi angka 11
          */
 
-        let angkaMinimal =
+        let minimal =
             ambilAngka(
                 promo[0]
             );
 
 
         if (
-            jumlah >= angkaMinimal
+            jumlah >= minimal
         ) {
 
-            diskon = promo[1];
+            diskonPerKarton =
+                promo[1];
 
         }
 
     }
 
 
+    /* ==========================================
+       TOTAL DISKON
+       
+       DISKON PER KARTON
+       ×
+       JUMLAH KARTON
+    ========================================== */
+
+    let totalDiskon =
+        diskonPerKarton *
+        jumlah;
+
+
+    /* ==========================================
+       TOTAL BAYAR
+    ========================================== */
+
     let total =
-        subtotal - diskon;
+        subtotal -
+        totalDiskon;
 
 
-    if (total < 0) {
+    if (
+        total < 0
+    ) {
 
         total = 0;
 
     }
 
 
+    /* ==========================================
+       TAMPILKAN
+    ========================================== */
+
     document.getElementById(
         "ringkasanHarga"
     ).innerText =
-        formatRupiah(
+        rupiah(
             hargaDipilih
         );
 
@@ -2278,23 +1842,31 @@ function hitungTotal() {
     document.getElementById(
         "subtotal"
     ).innerText =
-        formatRupiah(
+        rupiah(
             subtotal
         );
 
 
     document.getElementById(
-        "diskon"
+        "diskonPerKarton"
     ).innerText =
-        formatRupiah(
-            diskon
+        rupiah(
+            diskonPerKarton
+        );
+
+
+    document.getElementById(
+        "totalDiskon"
+    ).innerText =
+        rupiah(
+            totalDiskon
         );
 
 
     document.getElementById(
         "total"
     ).innerText =
-        formatRupiah(
+        rupiah(
             total
         );
 
@@ -2302,14 +1874,11 @@ function hitungTotal() {
 
 
 
-/* =========================================================
-   AMBIL ANGKA DARI NAMA PROMO
-========================================================= */
+/* =====================================================
+   AMBIL ANGKA PROMO
+===================================================== */
 
-function ambilAngka(
-    teks
-) {
-
+function ambilAngka(teks) {
 
     let hasil =
         teks.match(
@@ -2332,34 +1901,11 @@ function ambilAngka(
 
 
 
-/* =========================================================
-   FORMAT RUPIAH
-========================================================= */
+/* =====================================================
+   TAMBAH JUMLAH
+===================================================== */
 
-function formatRupiah(
-    angka
-) {
-
-
-    return new Intl.NumberFormat(
-        "id-ID",
-        {
-            style: "currency",
-            currency: "IDR",
-            maximumFractionDigits: 0
-        }
-    ).format(angka);
-
-}
-
-
-
-/* =========================================================
-   ORDER WHATSAPP
-========================================================= */
-
-function lanjutOrder() {
-
+function tambahJumlah() {
 
     let jumlah =
         parseInt(
@@ -2370,8 +1916,7 @@ function lanjutOrder() {
 
 
     if (
-        isNaN(jumlah)
-        ||
+        isNaN(jumlah) ||
         jumlah < 1
     ) {
 
@@ -2380,23 +1925,121 @@ function lanjutOrder() {
     }
 
 
+    jumlah++;
+
+
+    document.getElementById(
+        "jumlahKarton"
+    ).value =
+        jumlah;
+
+
+    hitungTotal();
+
+}
+
+
+
+/* =====================================================
+   KURANG JUMLAH
+===================================================== */
+
+function kurangJumlah() {
+
+    let jumlah =
+        parseInt(
+            document.getElementById(
+                "jumlahKarton"
+            ).value
+        );
+
+
+    if (
+        isNaN(jumlah) ||
+        jumlah <= 1
+    ) {
+
+        jumlah = 1;
+
+    }
+    else {
+
+        jumlah--;
+
+    }
+
+
+    document.getElementById(
+        "jumlahKarton"
+    ).value =
+        jumlah;
+
+
+    hitungTotal();
+
+}
+
+
+
+/* =====================================================
+   TUTUP POPUP
+===================================================== */
+
+function tutupPopup() {
+
+    document.getElementById(
+        "popup"
+    ).style.display =
+        "none";
+
+}
+
+
+
+/* =====================================================
+   ORDER WHATSAPP
+===================================================== */
+
+function orderWhatsApp() {
+
+    let jumlah =
+        parseInt(
+            document.getElementById(
+                "jumlahKarton"
+            ).value
+        );
+
+
+    if (
+        isNaN(jumlah) ||
+        jumlah < 1
+    ) {
+
+        jumlah = 1;
+
+    }
+
+
+    /* ==========================================
+       PROMO
+    ========================================== */
+
     let pilihan =
         document.querySelector(
             'input[name="promo"]:checked'
         );
 
 
-    let diskon = 0;
+    let diskonPerKarton = 0;
 
-    let namaPromo = "Harga Normal";
+    let namaPromo =
+        "Harga Normal";
 
 
     if (
-        pilihan
-        &&
+        pilihan &&
         pilihan.value !== "-1"
     ) {
-
 
         let index =
             parseInt(
@@ -2408,19 +2051,23 @@ function lanjutOrder() {
             promoDipilih[index];
 
 
-        let angkaMinimal =
+        let minimal =
             ambilAngka(
                 promo[0]
             );
 
 
+        /*
+         * Kalau belum memenuhi minimal
+         */
+
         if (
-            jumlah < angkaMinimal
+            jumlah < minimal
         ) {
 
             alert(
                 "Promo ini membutuhkan minimal " +
-                angkaMinimal +
+                minimal +
                 " karton."
             );
 
@@ -2433,37 +2080,50 @@ function lanjutOrder() {
             promo[0];
 
 
-        diskon =
+        diskonPerKarton =
             promo[1];
 
     }
 
 
+    /* ==========================================
+       HITUNG
+    ========================================== */
+
     let subtotal =
-        hargaDipilih * jumlah;
+        hargaDipilih *
+        jumlah;
+
+
+    let totalDiskon =
+        diskonPerKarton *
+        jumlah;
 
 
     let total =
-        subtotal - diskon;
+        subtotal -
+        totalDiskon;
 
 
-    if (total < 0) {
+    if (
+        total < 0
+    ) {
 
         total = 0;
 
     }
 
 
-    /* =====================================================
+    /* ==========================================
        PESAN WHATSAPP
-    ====================================================== */
+    ========================================== */
 
     let pesan =
 
         "Halo, saya ingin order:%0A%0A" +
 
         "Produk: " +
-        produkDipilih +
+        produkDipilih.nama +
         "%0A" +
 
         "Jumlah: " +
@@ -2471,13 +2131,13 @@ function lanjutOrder() {
         " karton%0A" +
 
         "Harga/karton: " +
-        formatRupiah(
+        rupiah(
             hargaDipilih
         ) +
         "%0A" +
 
         "Subtotal: " +
-        formatRupiah(
+        rupiah(
             subtotal
         ) +
         "%0A" +
@@ -2486,16 +2146,23 @@ function lanjutOrder() {
         namaPromo +
         "%0A" +
 
-        "Diskon: " +
-        formatRupiah(
-            diskon
+        "Diskon/karton: " +
+        rupiah(
+            diskonPerKarton
+        ) +
+        "%0A" +
+
+        "Total Diskon: " +
+        rupiah(
+            totalDiskon
         ) +
         "%0A" +
 
         "TOTAL: " +
-        formatRupiah(
+        rupiah(
             total
         ) +
+
         "%0A%0A" +
 
         "Mohon info ketersediaan barang dan proses order. Terima kasih.";
@@ -2503,12 +2170,9 @@ function lanjutOrder() {
 
     window.open(
 
-        "https://wa.me/"
-        +
-        nomorWA
-        +
-        "?text="
-        +
+        "https://wa.me/" +
+        nomorWA +
+        "?text=" +
         pesan,
 
         "_blank"
@@ -2519,18 +2183,16 @@ function lanjutOrder() {
 
 
 
-/* =========================================================
-   KLIK LUAR POPUP
-========================================================= */
+/* =====================================================
+   KLIK DI LUAR POPUP
+===================================================== */
 
 window.onclick =
-function(event)
-{
+function(event) {
 
-
-    let popup =
+    const popup =
         document.getElementById(
-            "popupPromo"
+            "popup"
         );
 
 
@@ -2538,12 +2200,19 @@ function(event)
         event.target === popup
     ) {
 
-        tutupPromo();
+        tutupPopup();
 
     }
 
 };
 
+
+
+/* =====================================================
+   JALANKAN WEBSITE
+===================================================== */
+
+tampilkanProduk();
 
 </script>
 
