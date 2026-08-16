@@ -33,7 +33,7 @@ rel="stylesheet">
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background: #f5f5f5;
     color: #333;
 }
 
@@ -103,7 +103,7 @@ header p {
 
 
 /* =========================================================
-   CONTAINER PRODUK
+   CONTAINER
 ========================================================= */
 
 .container {
@@ -118,7 +118,7 @@ header p {
 
 
 /* =========================================================
-   CARD PRODUK
+   CARD
 ========================================================= */
 
 .card {
@@ -169,7 +169,7 @@ header p {
 
 
 /* =========================================================
-   TOMBOL ORDER
+   BUTTON ORDER
 ========================================================= */
 
 .btn {
@@ -177,14 +177,18 @@ header p {
     width: calc(100% - 30px);
     margin: 5px 15px 15px;
     padding: 11px 15px;
+
     background: #e63946;
     color: white;
+
     text-decoration: none;
     border: none;
     border-radius: 6px;
+
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 700;
+
     cursor: pointer;
     transition: 0.3s;
 }
@@ -238,7 +242,7 @@ footer {
 
 
 /* =========================================================
-   BOX POPUP
+   POPUP BOX
 ========================================================= */
 
 .popup-box {
@@ -275,7 +279,7 @@ footer {
 
 
 /* =========================================================
-   TOMBOL CLOSE
+   CLOSE
 ========================================================= */
 
 .tutup-popup {
@@ -299,7 +303,7 @@ footer {
 
 
 /* =========================================================
-   JUDUL POPUP
+   POPUP TITLE
 ========================================================= */
 
 .popup-box h2 {
@@ -338,14 +342,12 @@ footer {
 
 
 /* =========================================================
-   JUMLAH KARTON
+   JUMLAH
 ========================================================= */
 
 .judul-input {
     font-size: 14px;
-
     font-weight: 700;
-
     margin-bottom: 8px;
 }
 
@@ -354,7 +356,6 @@ footer {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 15px;
@@ -368,15 +369,12 @@ footer {
     height: 42px;
 
     border: none;
-
     border-radius: 50%;
 
     background: #e63946;
-
     color: white;
 
     font-size: 22px;
-
     font-weight: bold;
 
     cursor: pointer;
@@ -406,14 +404,12 @@ footer {
 
 
 /* =========================================================
-   PROGRAM PROMO
+   PROMO
 ========================================================= */
 
 .promo-title {
     font-size: 14px;
-
     font-weight: 700;
-
     margin-bottom: 10px;
 }
 
@@ -435,18 +431,15 @@ footer {
 
 .promo-item:hover {
     border-color: #e63946;
-
     background: #fff7f7;
 }
 
 
 .promo-item label {
     display: block;
-
     cursor: pointer;
 
     font-size: 13px;
-
     line-height: 1.5;
 }
 
@@ -462,7 +455,7 @@ footer {
 
 
 /* =========================================================
-   RINGKASAN HARGA
+   RINGKASAN
 ========================================================= */
 
 .ringkasan {
@@ -473,7 +466,6 @@ footer {
     padding: 15px;
 
     margin-top: 18px;
-
     margin-bottom: 15px;
 }
 
@@ -508,13 +500,12 @@ footer {
 
 .diskon {
     color: #e63946;
-
     font-weight: 700;
 }
 
 
 /* =========================================================
-   TOMBOL WHATSAPP
+   WHATSAPP
 ========================================================= */
 
 .btn-whatsapp {
@@ -629,7 +620,7 @@ footer {
 <header>
 
 
-    <!-- ✏️ UBAH LOGO SINAR MEADOW DI SINI JIKA PERLU -->
+    <!-- LOGO SINAR MEADOW -->
 
     <img
         src="Images/sinarmeadow.png"
@@ -690,7 +681,7 @@ footer {
 
 
 <!-- =========================================================
-     KATALOG PRODUK
+     PRODUK
 ========================================================= -->
 
 <section class="container">
@@ -732,14 +723,24 @@ footer {
         Rp 2.124.300 (17kg)
     </span>
 
+
+    <!-- =====================================================
+         ✏️ UBAH PROMO PRODUK 1 DI SINI
+    ====================================================== -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Moremade Safire Butter Blend',
-            2124300
+            2124300,
+            [
+                ['Beli 5 karton', 50000],
+                ['Beli 10 karton', 150000],
+                ['Beli 20 karton', 350000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -781,14 +782,22 @@ footer {
         Rp 810.000 (60x200gr)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 2 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Mother Choice Butter Blend',
-            810000
+            810000,
+            [
+                ['Beli 5 karton', 50000],
+                ['Beli 10 karton', 150000],
+                ['Beli 20 karton', 350000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -830,14 +839,22 @@ footer {
         Rp 1.185.800 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 3 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Grand Butter Blend',
-            1185800
+            1185800,
+            [
+                ['Beli 3 karton', 30000],
+                ['Beli 6 karton', 80000],
+                ['Beli 10 karton', 200000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -879,14 +896,22 @@ footer {
         Rp 824.700 (16kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 4 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Merrywhip Cream Fat',
-            824700
+            824700,
+            [
+                ['Beli 3 karton', 30000],
+                ['Beli 6 karton', 75000],
+                ['Beli 10 karton', 150000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -928,14 +953,22 @@ footer {
         Rp 578.000 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 5 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB BOS',
-            578000
+            578000,
+            [
+                ['Beli 5 karton', 25000],
+                ['Beli 10 karton', 75000],
+                ['Beli 20 karton', 150000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -977,14 +1010,22 @@ footer {
         Rp 554.400 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 6 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Prime Cake Margarin',
-            554400
+            554400,
+            [
+                ['Beli 5 karton', 25000],
+                ['Beli 10 karton', 70000],
+                ['Beli 20 karton', 150000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1026,14 +1067,22 @@ footer {
         Rp 699.000 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 7 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Medal Bread Fat',
-            699000
+            699000,
+            [
+                ['Beli 5 karton', 30000],
+                ['Beli 10 karton', 80000],
+                ['Beli 20 karton', 180000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1075,14 +1124,22 @@ footer {
         Rp 714.100 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 8 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Flake Pastry Shortening',
-            714100
+            714100,
+            [
+                ['Beli 3 karton', 30000],
+                ['Beli 6 karton', 70000],
+                ['Beli 10 karton', 150000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1124,14 +1181,22 @@ footer {
         Rp 553.400 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 9 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Bread-O Bread Fat',
-            553400
+            553400,
+            [
+                ['Beli 5 karton', 25000],
+                ['Beli 10 karton', 60000],
+                ['Beli 20 karton', 120000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1173,14 +1238,22 @@ footer {
         Rp 741.700 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 10 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB BOS Star',
-            741700
+            741700,
+            [
+                ['Beli 3 karton', 30000],
+                ['Beli 6 karton', 80000],
+                ['Beli 10 karton', 180000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1203,7 +1276,7 @@ footer {
     </h2>
 
     <p>
-        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan (tempura, ayam goreng)
+        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan
     </p>
 
     <p>
@@ -1222,14 +1295,22 @@ footer {
         Rp 543.900 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 11 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Frymasta',
-            543900
+            543900,
+            [
+                ['Beli 5 karton', 25000],
+                ['Beli 10 karton', 70000],
+                ['Beli 20 karton', 150000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1252,7 +1333,7 @@ footer {
     </h2>
 
     <p>
-        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan (tempura, ayam goreng)
+        Cocok untuk menggoreng Donat, baik untuk semua jenis produk yang menggunakan adonan
     </p>
 
     <p>
@@ -1271,14 +1352,22 @@ footer {
         Rp 800.700 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 12 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'GB Frymasta Star',
-            800700
+            800700,
+            [
+                ['Beli 3 karton', 30000],
+                ['Beli 6 karton', 80000],
+                ['Beli 10 karton', 180000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1320,14 +1409,22 @@ footer {
         Rp 404.600 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 13 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Mother Choice Bakery Margarin',
-            404600
+            404600,
+            [
+                ['Beli 5 karton', 20000],
+                ['Beli 10 karton', 60000],
+                ['Beli 20 karton', 120000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1369,14 +1466,22 @@ footer {
         Rp 141.900 (4,5kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 14 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Mother Choice MultiPurpose MGR',
-            141900
+            141900,
+            [
+                ['Beli 5 karton', 10000],
+                ['Beli 10 karton', 30000],
+                ['Beli 20 karton', 60000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1399,7 +1504,7 @@ footer {
     </h2>
 
     <p>
-        Cocok untuk jenis deep frying untuk produk yang menggunakan adonan, menggoreng donat
+        Cocok untuk jenis deep frying untuk produk yang menggunakan adonan
     </p>
 
     <p>
@@ -1418,14 +1523,22 @@ footer {
         Rp 405.900 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 15 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Cita Fry',
-            405900
+            405900,
+            [
+                ['Beli 5 karton', 25000],
+                ['Beli 10 karton', 60000],
+                ['Beli 20 karton', 120000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1467,14 +1580,22 @@ footer {
         Rp 370.400 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 16 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Cita White Margarin',
-            370400
+            370400,
+            [
+                ['Beli 5 karton', 20000],
+                ['Beli 10 karton', 50000],
+                ['Beli 20 karton', 100000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1516,14 +1637,22 @@ footer {
         Rp 341.900 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 17 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Smazz Cream Margarin',
-            341900
+            341900,
+            [
+                ['Beli 5 karton', 20000],
+                ['Beli 10 karton', 50000],
+                ['Beli 20 karton', 100000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1565,14 +1694,22 @@ footer {
         Rp 267.700 (15kg)
     </span>
 
+
+    <!-- ✏️ UBAH PROMO PRODUK 18 DI SINI -->
+
     <button
         class="btn"
         onclick="bukaPromo(
             'Smazz Bakery Compound',
-            267700
+            267700,
+            [
+                ['Beli 5 karton', 15000],
+                ['Beli 10 karton', 40000],
+                ['Beli 20 karton', 80000]
+            ]
         )"
     >
-        Order
+        ORDER
     </button>
 
 </div>
@@ -1588,16 +1725,14 @@ footer {
 
 <footer>
 
-    <p>
-        © 2026 Katalog Margarin
-    </p>
+    © 2026 Katalog Margarin
 
 </footer>
 
 
 
 <!-- =========================================================
-     POPUP PROGRAM PROMO
+     POPUP PROMO
 ========================================================= -->
 
 <div
@@ -1609,8 +1744,6 @@ footer {
     <div class="popup-box">
 
 
-        <!-- TUTUP -->
-
         <span
             class="tutup-popup"
             onclick="tutupPromo()"
@@ -1619,17 +1752,14 @@ footer {
         </span>
 
 
-
         <h2>
             🔥 PROGRAM PROMO
         </h2>
 
 
-
         <h3 id="namaProdukPromo">
             Nama Produk
         </h3>
-
 
 
         <p class="harga-normal">
@@ -1643,19 +1773,14 @@ footer {
         </p>
 
 
-
-        <!-- =====================================================
-             JUMLAH PEMBELIAN
-        ====================================================== -->
+        <!-- JUMLAH -->
 
         <div class="judul-input">
             Jumlah Pembelian
         </div>
 
 
-
         <div class="jumlah-box">
-
 
             <button
                 class="jumlah-btn"
@@ -1663,7 +1788,6 @@ footer {
             >
                 −
             </button>
-
 
 
             <input
@@ -1675,7 +1799,6 @@ footer {
             >
 
 
-
             <button
                 class="jumlah-btn"
                 onclick="tambahJumlah()"
@@ -1683,136 +1806,22 @@ footer {
                 +
             </button>
 
-
         </div>
 
 
-
-        <!-- =====================================================
-             ✏️✏️✏️ PROGRAM PROMO DI SINI ✏️✏️✏️
-             
-             CONTOH SAJA:
-             5 KARTON  = DISKON 50.000
-             10 KARTON = DISKON 150.000
-             20 KARTON = DISKON 350.000
-        ====================================================== -->
-
+        <!-- PROMO AKAN DIBUAT OTOMATIS -->
 
         <div class="promo-title">
             Pilih Program Promo
         </div>
 
 
-
-        <!-- NORMAL -->
-
-        <div class="promo-item">
-
-            <label>
-
-                <input
-                    type="radio"
-                    name="promo"
-                    value="normal"
-                    checked
-                    onchange="hitungTotal()"
-                >
-
-                Harga Normal
-
-            </label>
+        <div id="daftarPromo">
 
         </div>
 
 
-
-        <!-- PROMO 5 -->
-
-        <div class="promo-item">
-
-            <label>
-
-                <input
-                    type="radio"
-                    name="promo"
-                    value="promo5"
-                    onchange="hitungTotal()"
-                >
-
-                <strong>
-                    Promo 5 Karton
-                </strong>
-
-                <br>
-
-                Beli minimal 5 karton
-                → Diskon Rp 50.000
-
-            </label>
-
-        </div>
-
-
-
-        <!-- PROMO 10 -->
-
-        <div class="promo-item">
-
-            <label>
-
-                <input
-                    type="radio"
-                    name="promo"
-                    value="promo10"
-                    onchange="hitungTotal()"
-                >
-
-                <strong>
-                    Promo 10 Karton
-                </strong>
-
-                <br>
-
-                Beli minimal 10 karton
-                → Diskon Rp 150.000
-
-            </label>
-
-        </div>
-
-
-
-        <!-- PROMO 20 -->
-
-        <div class="promo-item">
-
-            <label>
-
-                <input
-                    type="radio"
-                    name="promo"
-                    value="promo20"
-                    onchange="hitungTotal()"
-                >
-
-                <strong>
-                    Promo 20 Karton
-                </strong>
-
-                <br>
-
-                Beli minimal 20 karton
-                → Diskon Rp 350.000
-
-            </label>
-
-        </div>
-
-
-
-        <!-- =====================================================
-             RINGKASAN PESANAN
-        ====================================================== -->
+        <!-- RINGKASAN -->
 
         <div class="ringkasan">
 
@@ -1828,7 +1837,6 @@ footer {
                 </strong>
 
             </div>
-
 
 
             <div class="baris-harga">
@@ -1850,7 +1858,6 @@ footer {
             </div>
 
 
-
             <div class="baris-harga">
 
                 <span>
@@ -1862,7 +1869,6 @@ footer {
                 </strong>
 
             </div>
-
 
 
             <div class="baris-harga">
@@ -1881,7 +1887,6 @@ footer {
             </div>
 
 
-
             <div class="baris-harga total">
 
                 <span>
@@ -1898,10 +1903,7 @@ footer {
         </div>
 
 
-
-        <!-- =====================================================
-             ORDER WHATSAPP
-        ====================================================== -->
+        <!-- WHATSAPP -->
 
         <button
             class="btn-whatsapp"
@@ -1927,21 +1929,22 @@ footer {
 
 
 /* =========================================================
-   PRODUK YANG DIPILIH
+   NOMOR WHATSAPP
+   ✏️ GANTI DENGAN NOMOR KAMU
+========================================================= */
+
+const nomorWA = "6282340550003";
+
+
+/* =========================================================
+   DATA PRODUK YANG SEDANG DIPILIH
 ========================================================= */
 
 let produkDipilih = "";
 
 let hargaDipilih = 0;
 
-
-
-/* =========================================================
-   ✏️ NOMOR WHATSAPP
-========================================================= */
-
-const nomorWA = "6282340550003";
-
+let promoDipilih = [];
 
 
 /* =========================================================
@@ -1950,13 +1953,16 @@ const nomorWA = "6282340550003";
 
 function bukaPromo(
     namaProduk,
-    hargaProduk
+    hargaProduk,
+    daftarPromo
 ) {
 
 
     produkDipilih = namaProduk;
 
     hargaDipilih = hargaProduk;
+
+    promoDipilih = daftarPromo;
 
 
     document.getElementById(
@@ -1975,9 +1981,7 @@ function bukaPromo(
     ).value = 1;
 
 
-    document.querySelector(
-        'input[value="normal"]'
-    ).checked = true;
+    buatDaftarPromo();
 
 
     document.getElementById(
@@ -1986,6 +1990,95 @@ function bukaPromo(
 
 
     hitungTotal();
+
+}
+
+
+
+/* =========================================================
+   MEMBUAT PROMO OTOMATIS
+========================================================= */
+
+function buatDaftarPromo() {
+
+
+    const tempatPromo =
+        document.getElementById(
+            "daftarPromo"
+        );
+
+
+    tempatPromo.innerHTML = "";
+
+
+    /* HARGA NORMAL */
+
+    tempatPromo.innerHTML += `
+
+        <div class="promo-item">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="promo"
+                    value="-1"
+                    checked
+                    onchange="hitungTotal()"
+                >
+
+                <strong>
+                    Harga Normal
+                </strong>
+
+            </label>
+
+        </div>
+
+    `;
+
+
+    /* PROMO PRODUK */
+
+    promoDipilih.forEach(
+        function(promo, index)
+        {
+
+            let nama = promo[0];
+
+            let diskon = promo[1];
+
+
+            tempatPromo.innerHTML += `
+
+                <div class="promo-item">
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="promo"
+                            value="${index}"
+                            onchange="hitungTotal()"
+                        >
+
+                        <strong>
+                            ${nama}
+                        </strong>
+
+                        <br>
+
+                        Diskon:
+                        ${formatRupiah(diskon)}
+
+                    </label>
+
+                </div>
+
+            `;
+
+        }
+    );
 
 }
 
@@ -2007,7 +2100,7 @@ function tutupPromo() {
 
 
 /* =========================================================
-   TAMBAH JUMLAH
+   TAMBAH
 ========================================================= */
 
 function tambahJumlah() {
@@ -2021,7 +2114,11 @@ function tambahJumlah() {
         );
 
 
-    if (isNaN(jumlah)) {
+    if (
+        isNaN(jumlah)
+        ||
+        jumlah < 1
+    ) {
 
         jumlah = 1;
 
@@ -2043,7 +2140,7 @@ function tambahJumlah() {
 
 
 /* =========================================================
-   KURANG JUMLAH
+   KURANG
 ========================================================= */
 
 function kurangJumlah() {
@@ -2057,7 +2154,11 @@ function kurangJumlah() {
         );
 
 
-    if (isNaN(jumlah)) {
+    if (
+        isNaN(jumlah)
+        ||
+        jumlah < 1
+    ) {
 
         jumlah = 1;
 
@@ -2077,63 +2178,6 @@ function kurangJumlah() {
 
 
     hitungTotal();
-
-}
-
-
-
-/* =========================================================
-   HITUNG DISKON
-========================================================= */
-
-function hitungDiskon(
-    jumlah,
-    promo
-) {
-
-
-    let diskon = 0;
-
-
-    /* =====================================================
-       ✏️✏️✏️ UBAH NOMINAL DISKON DI SINI
-    ===================================================== */
-
-
-    if (
-        promo === "promo5"
-        &&
-        jumlah >= 5
-    ) {
-
-        diskon = 50000;
-
-    }
-
-
-    if (
-        promo === "promo10"
-        &&
-        jumlah >= 10
-    ) {
-
-        diskon = 150000;
-
-    }
-
-
-    if (
-        promo === "promo20"
-        &&
-        jumlah >= 20
-    ) {
-
-        diskon = 350000;
-
-    }
-
-
-    return diskon;
 
 }
 
@@ -2173,25 +2217,55 @@ function hitungTotal() {
         hargaDipilih * jumlah;
 
 
-    let pilihanPromo =
+    let pilihan =
         document.querySelector(
             'input[name="promo"]:checked'
         );
 
 
-    let promo =
-        pilihanPromo
-        ?
-        pilihanPromo.value
-        :
-        "normal";
+    let diskon = 0;
 
 
-    let diskon =
-        hitungDiskon(
-            jumlah,
-            promo
-        );
+    if (
+        pilihan
+        &&
+        pilihan.value !== "-1"
+    ) {
+
+        let index =
+            parseInt(
+                pilihan.value
+            );
+
+
+        let promo =
+            promoDipilih[index];
+
+
+        /*
+         * Promo hanya aktif
+         * jika jumlah memenuhi syarat.
+         *
+         * Contoh:
+         * "Beli 5 karton"
+         * berarti minimal 5 karton.
+         */
+
+        let angkaMinimal =
+            ambilAngka(
+                promo[0]
+            );
+
+
+        if (
+            jumlah >= angkaMinimal
+        ) {
+
+            diskon = promo[1];
+
+        }
+
+    }
 
 
     let total =
@@ -2247,6 +2321,36 @@ function hitungTotal() {
 
 
 /* =========================================================
+   AMBIL ANGKA DARI NAMA PROMO
+========================================================= */
+
+function ambilAngka(
+    teks
+) {
+
+
+    let hasil =
+        teks.match(
+            /\d+/
+        );
+
+
+    if (hasil) {
+
+        return parseInt(
+            hasil[0]
+        );
+
+    }
+
+
+    return 999999;
+
+}
+
+
+
+/* =========================================================
    FORMAT RUPIAH
 ========================================================= */
 
@@ -2263,55 +2367,6 @@ function formatRupiah(
             maximumFractionDigits: 0
         }
     ).format(angka);
-
-}
-
-
-
-/* =========================================================
-   NAMA PROGRAM PROMO
-========================================================= */
-
-function namaPromo(
-    jumlah,
-    promo
-) {
-
-
-    if (
-        promo === "promo5"
-        &&
-        jumlah >= 5
-    ) {
-
-        return "Promo 5 Karton - Diskon Rp 50.000";
-
-    }
-
-
-    if (
-        promo === "promo10"
-        &&
-        jumlah >= 10
-    ) {
-
-        return "Promo 10 Karton - Diskon Rp 150.000";
-
-    }
-
-
-    if (
-        promo === "promo20"
-        &&
-        jumlah >= 20
-    ) {
-
-        return "Promo 20 Karton - Diskon Rp 350.000";
-
-    }
-
-
-    return "Harga Normal";
 
 }
 
@@ -2343,101 +2398,83 @@ function lanjutOrder() {
     }
 
 
-    let pilihanPromo =
+    let pilihan =
         document.querySelector(
             'input[name="promo"]:checked'
         );
 
 
-    let promo =
-        pilihanPromo
-        ?
-        pilihanPromo.value
-        :
-        "normal";
+    let diskon = 0;
 
-
-    /* =====================================================
-       CEK SYARAT PROMO
-    ===================================================== */
+    let namaPromo = "Harga Normal";
 
 
     if (
-        promo === "promo5"
+        pilihan
         &&
-        jumlah < 5
+        pilihan.value !== "-1"
     ) {
 
-        alert(
-            "Promo 5 Karton hanya berlaku untuk pembelian minimal 5 karton."
-        );
 
-        return;
+        let index =
+            parseInt(
+                pilihan.value
+            );
+
+
+        let promo =
+            promoDipilih[index];
+
+
+        let angkaMinimal =
+            ambilAngka(
+                promo[0]
+            );
+
+
+        if (
+            jumlah < angkaMinimal
+        ) {
+
+            alert(
+                "Promo ini membutuhkan minimal " +
+                angkaMinimal +
+                " karton."
+            );
+
+            return;
+
+        }
+
+
+        namaPromo =
+            promo[0];
+
+
+        diskon =
+            promo[1];
 
     }
 
-
-    if (
-        promo === "promo10"
-        &&
-        jumlah < 10
-    ) {
-
-        alert(
-            "Promo 10 Karton hanya berlaku untuk pembelian minimal 10 karton."
-        );
-
-        return;
-
-    }
-
-
-    if (
-        promo === "promo20"
-        &&
-        jumlah < 20
-    ) {
-
-        alert(
-            "Promo 20 Karton hanya berlaku untuk pembelian minimal 20 karton."
-        );
-
-        return;
-
-    }
-
-
-
-    /* =====================================================
-       HITUNG
-    ===================================================== */
 
     let subtotal =
         hargaDipilih * jumlah;
-
-
-    let diskon =
-        hitungDiskon(
-            jumlah,
-            promo
-        );
 
 
     let total =
         subtotal - diskon;
 
 
-    let namaProgram =
-        namaPromo(
-            jumlah,
-            promo
-        );
+    if (total < 0) {
 
+        total = 0;
+
+    }
 
 
     /* =====================================================
        PESAN WHATSAPP
-    ===================================================== */
+    ====================================================== */
 
     let pesan =
 
@@ -2463,8 +2500,8 @@ function lanjutOrder() {
         ) +
         "%0A" +
 
-        "Program: " +
-        namaProgram +
+        "Program Promo: " +
+        namaPromo +
         "%0A" +
 
         "Diskon: " +
@@ -2479,13 +2516,8 @@ function lanjutOrder() {
         ) +
         "%0A%0A" +
 
-        "Mohon info ketersediaan dan proses order. Terima kasih.";
+        "Mohon info ketersediaan barang dan proses order. Terima kasih.";
 
-
-
-    /* =====================================================
-       BUKA WHATSAPP
-    ===================================================== */
 
     window.open(
 
@@ -2506,12 +2538,12 @@ function lanjutOrder() {
 
 
 /* =========================================================
-   KLIK DI LUAR POPUP = TUTUP
+   KLIK LUAR POPUP
 ========================================================= */
 
-window.onclick = function(
-    event
-) {
+window.onclick =
+function(event)
+{
 
 
     let popup =
